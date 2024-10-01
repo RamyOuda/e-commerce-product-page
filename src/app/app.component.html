@@ -1,15 +1,20 @@
 <mat-toolbar>
-  <button mat-icon-button aria-label="Open Menu">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <img src="images/logo.svg" alt="Company logo" />
-  <span class="nav-spacer"></span>
-  <button mat-icon-button aria-label="Favorite Product">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button aria-label="Share Product">
-    <mat-icon>share</mat-icon>
-  </button>
+  <nav class="navigation">
+    <div class="left-section">
+      <button class="menu-button" mat-icon-button aria-label="Open Menu">
+        <img src="images/icon-menu.svg" class="menu-icon" alt="Menu Icon" />
+      </button>
+      <img src="images/logo.svg" class="company-logo" alt="Company Logo" />
+    </div>
+    <div class="right-section">
+      <button mat-icon-button aria-label="Open Cart">
+        <img src="images/icon-cart.svg" alt="Cart Icon" />
+      </button>
+      <button mat-icon-button aria-label="Open Profile">
+        <img src="images/image-avatar.png" alt="Profile Image" />
+      </button>
+    </div>
+  </nav>
 </mat-toolbar>
 
 <app-home></app-home>

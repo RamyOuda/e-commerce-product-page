@@ -1,3 +1,29 @@
-.nav-spacer {
-  flex: 1 1 auto;
+@import "../styles/mixins";
+
+mat-toolbar {
+  height: 80px;
+
+  .navigation {
+    @include flex(row, space-between);
+    width: 100%;
+
+    .left-section {
+      @include flex;
+
+      .menu-button {
+        @include flex;
+
+        .menu-icon {
+          height: 16px;
+          width: 16px;
+        }
+      }
+
+      .company-logo {
+        position: relative;
+        bottom: 2px;
+        padding-left: 8px;
+      }
+    }
+  }
 }
